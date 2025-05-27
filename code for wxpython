@@ -1,0 +1,159 @@
+//wx widgets
+import wx
+
+class MyFrame(wx.Frame):
+    def _init_(self):
+        super()._init_(parent=None, title='Hello World')
+        panel = wx.Panel(self)
+        fgs=wx.FlexGridSizer(rows=5,cols=2,hgap=5,vgap=5)
+
+        # text control widget
+        fgs.Add(wx.TextCtrl(panel, value='initial text'))
+        fgs.Add(wx.TextCtrl(panel, style=wx.TE_PASSWORD))
+
+        #radiobutton widget
+        fgs.Add(wx.RadioButton(panel, label='Male',style=wx.RB_GROUP))
+        fgs.Add(wx.RadioButton(panel, label='Female'))
+
+        #STATICTEXT widget
+        fgs.Add(wx.StaticText(panel, label="Enter your name:"))
+
+        #checkbox widget
+        fgs.Add(wx.CheckBox(panel, label="Black"))
+
+        #combobox widget
+        items=["Apple", "Rice", "Cheese cake"]
+        fgs.Add(wx.ComboBox(panel, choices= items))
+
+        #slider widget
+        fgs.Add(wx.Slider(panel, value= 50, minValue=0, maxValue=100))
+
+        # button widget
+        fgs.Add(wx.Button(panel, label='Press Me'))
+
+        panel.SetSizer(fgs)
+        self.Show()
+
+if _name_ == '_main_':
+    app = wx.App()
+    frame = MyFrame()
+    app.MainLoop()
+
+
+//wx flexgridsizer
+  import wx
+
+class MyFrame(wx.Frame):
+    def _init_(self):
+        super()._init_(parent=None, title='Hello World')
+        panel = wx.Panel(self)
+        fgs=wx.FlexGridSizer(rows=5,cols=2,hgap=5,vgap=5)
+
+        # text control widget
+        fgs.Add(wx.TextCtrl(panel, value='initial text'))
+        fgs.Add(wx.TextCtrl(panel, style=wx.TE_PASSWORD))
+
+        #radiobutton widget
+        fgs.Add(wx.RadioButton(panel, label='Male',style=wx.RB_GROUP))
+        fgs.Add(wx.RadioButton(panel, label='Female'))
+
+        #STATICTEXT widget
+        fgs.Add(wx.StaticText(panel, label="Enter your name:"))
+
+        #checkbox widget
+        fgs.Add(wx.CheckBox(panel, label="Black"))
+
+        #combobox widget
+        items=["Apple", "Rice", "Cheese cake"]
+        fgs.Add(wx.ComboBox(panel, choices= items))
+
+        #slider widget
+        fgs.Add(wx.Slider(panel, value= 50, minValue=0, maxValue=100))
+
+        # button widget
+        fgs.Add(wx.Button(panel, label='Press Me'))
+
+        panel.SetSizer(fgs)
+        self.Show()
+
+if _name_ == '_main_':
+    app = wx.App()
+    frame = MyFrame()
+    app.MainLoop()
+
+
+//wx class
+  import wx
+
+
+class MyFrame(wx.Frame):
+    def _init_(self):
+        super()._init_(parent=None, title='Hello World')
+        self.Show()
+
+if _name=='main_':
+    app = wx.App()
+    frame = MyFrame()
+    app.MainLoop()
+
+
+// wx skeleton
+  import wx
+
+app = wx.App()
+frame = wx.Frame(parent=None, title='Hello World')
+frame.Show()
+app.MainLoop()
+
+
+//wx boxsizer
+  from random import choices
+
+import wx
+
+class MyFrame(wx.Frame):
+    def _init_(self):
+        super()._init_(parent=None, title='Hello World')
+        panel = wx.Panel(self)
+        vbox = wx.BoxSizer(wx.VERTICAL)
+
+        # text control widget
+        vbox.Add(wx.TextCtrl(panel, value='initial text'),flag= wx.ALL, border=5)
+        vbox.Add(wx.TextCtrl(panel, style=wx.TE_PASSWORD),flag= wx.ALL, border=5)
+
+        #radiobutton widget
+        vbox.Add(wx.RadioButton(panel, label='Male',style=wx.RB_GROUP),flag= wx.ALL, border=5)
+        vbox.Add(wx.RadioButton(panel, label='Female'),flag= wx.ALL, border=5)
+
+        #STATICTEXT widget
+        vbox.Add(wx.StaticText(panel, label="Enter your name:"),flag= wx.ALL, border=5)
+
+        #checkbox widget
+        vbox.Add(wx.CheckBox(panel, label="Black"),flag= wx.ALL, border=5)
+
+        #combobox widget
+        items=["Apple", "Rice", "Cheese cake"]
+        vbox.Add(wx.ComboBox(panel, choices= items),flag= wx.ALL, border=5)
+
+        #slider widget
+        vbox.Add(wx.Slider(panel, value= 50, minValue=0, maxValue=100),flag= wx.ALL, border=5)
+
+        # button widget
+        vbox.Add(wx.Button(panel, label='Press Me'),flag= wx.ALL, border=5)
+
+        panel.SetSizer(vbox)
+        self.Show()
+
+if _name_ == '_main_':
+    app = wx.App()
+    frame = MyFrame()
+    app.MainLoop()
+  
+
+  
+   
+
+
+
+
+  
